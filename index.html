@@ -6,19 +6,21 @@
     <title>TIENDA DE MAQUILLAJE VALERIA</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-    body {
+
+        body {
             font-family: 'Poppins', sans-serif;
             background-color: #eceff1;
             color: #333;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            height: 100vh;
         }
-        h1 { color: #ff6f61; 
-            margin-bottom: 40px;
-           }
+
+        h1 {
+            color: #ff6f61;
+            margin-bottom: 40px; /* Aumenté el espacio inferior */
+            text-align: center;
+        }
+
         .container1 {
             text-align: center;
             max-width: 600px;
@@ -29,16 +31,20 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1s ease-in-out;
         }
-        .container { 
+
+        .container {
             display: flex;
             flex-wrap: wrap;
-            
+            justify-content: center;
+            padding: 20px;
         }
+
         ol {
             list-style-type: decimal;
             list-style-position: inside;
             text-align: left;
         }
+
         li {
             margin-bottom: 15px;
             background: #e1f5fe;
@@ -46,19 +52,29 @@
             border-radius: 4px;
             transition: background 0.3s;
         }
-        li:hover {
-            background: #b3e5fc;
-        }
-        li::marker {
-            color: #ff6f61;
-        }
+
+            li:hover {
+                background: #b3e5fc;
+            }
+
+            li::marker {
+                color: #ff6f61;
+            }
+
         strong {
             color: #ff6f61;
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
+
         .producto {
             background-color: #fff;
             border: 1px solid #ddd;
@@ -69,21 +85,26 @@
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .producto img {
-            max-width: 100%;
-            height: auto;
-        }
-        .producto h3 {
-            margin: 15px 0 10px;
-        }
-        .producto p {
-            margin: 10px 0;
-        }
+
+            .producto img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .producto h3 {
+                margin: 15px 0 10px;
+            }
+
+            .producto p {
+                margin: 10px 0;
+            }
+
         .precio {
             color: #e91e63;
             font-weight: bold;
             font-size: 1.2em;
         }
+
         .btn-comprar {
             background-color: #e91e63;
             color: white;
@@ -95,14 +116,15 @@
             display: inline-block;
             margin-top: 10px;
         }
-        .btn-comprar:hover {
-            background-color: #d81b60;
-        }
+
+            .btn-comprar:hover {
+                background-color: #d81b60;
+            }
     </style>
 </head>
 <body>
     <div class="container">
-    <h1>TIENDA DE MAQUILLAJES VALERIA</h1>
+        <h1>TIENDA DE MAQUILLAJES VALERIA</h1>
     </div>
     <div class="container">
         <div class="producto">
@@ -123,7 +145,7 @@
             <p class="precio">$619.00 MXN</p>
             <a href="#" class="btn-comprar">Comprar</a>
         </div>
-         <div class="producto">
+        <div class="producto">
             <img src="https://sdcdn.io/mac/mx/mac_sku_NY9N70_1x1_0.png?width=1080&height=1080" alt="Producto 4">
             <h3>Labial - M·A·CXIMAL SILKY MATTE LIPSTICK</h3>
             <p class="precio">$499.00 MXN</p>
@@ -141,16 +163,16 @@
             <p class="precio">$1,389.00 MXN</p>
             <a href="#" class="btn-comprar">Comprar</a>
         </div>
-        <div class="container">
-    <h1>Pasos Para Preparar La Piel Antes De Aplicar Maquillaje</h1>
-    <ol>
-        <li><strong>Limpiar:</strong> Lava tu rostro con un limpiador suave para eliminar cualquier suciedad o residuo.</li>
-        <li><strong>Exfoliar:</strong> Usa un exfoliante suave para eliminar las células muertas de la piel y obtener una superficie suave.</li>
-        <li><strong>Toner:</strong> Aplica un toner para equilibrar el pH de tu piel y preparar tu rostro para los siguientes pasos.</li>
-        <li><strong>Hidratar:</strong> Usa una crema hidratante adecuada para tu tipo de piel para mantenerla hidratada y suave.</li>
-        <li><strong>Primer:</strong> Aplica un primer para crear una base lisa y ayudar a que el maquillaje dure más tiempo.</li>
-    </ol>
     </div>
+    <div class="container">
+        <h1>Pasos Para Preparar La Piel Antes De Aplicar Maquillaje</h1>
+        <ol>
+            <li><strong>Limpiar:</strong> Lava tu rostro con un limpiador suave para eliminar cualquier suciedad o residuo.</li>
+            <li><strong>Exfoliar:</strong> Usa un exfoliante suave para eliminar las células muertas de la piel y obtener una superficie suave.</li>
+            <li><strong>Toner:</strong> Aplica un toner para equilibrar el pH de tu piel y preparar tu rostro para los siguientes pasos.</li>
+            <li><strong>Hidratar:</strong> Usa una crema hidratante adecuada para tu tipo de piel para mantenerla hidratada y suave.</li>
+            <li><strong>Primer:</strong> Aplica un primer para crear una base lisa y ayudar a que el maquillaje dure más tiempo.</li>
+        </ol>
     </div>
 </body>
 </html>
