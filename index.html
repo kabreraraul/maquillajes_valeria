@@ -5,17 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIENDA DE MAQUILLAJE VALERIA</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eceff1;
             color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            list-style-position: inside;
+            text-align: left;
+        }
+        li {
+            margin-bottom: 15px;
+            background: #e1f5fe;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        li:hover {
+            background: #b3e5fc;
+        }
+        li::marker {
+            color: #ff6f61;
+        }
+        strong {
+            color: #ff6f61;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         .producto {
             background-color: #fff;
@@ -55,40 +94,10 @@
         }
         .btn-comprar:hover {
             background-color: #d81b60;
-        }
-        .container1 { 
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        ol {
-            list-style-type: decimal;
-            list-style-position: inside;
-            text-align: left;
-        }
-        li {
-            margin-bottom: 15px;
-        }
-        li::marker {
-            color: #d81b60;
-        }
-        strong {
-            color: #d81b60;
-        }
     </style>
 </head>
 <body>
     <center><h1>TIENDA DE MAQUILLAJE VALERIA ZG</h1></center>
-    <div class="container1">
-    <h1>Pasos para Preparar la Piel antes de Aplicar Maquillaje</h1>
-    <ol>
-        <li><strong>Limpiar:</strong> Lava tu rostro con un limpiador suave para eliminar cualquier suciedad o residuo.</li>
-        <li><strong>Exfoliar:</strong> Usa un exfoliante suave para eliminar las células muertas de la piel y obtener una superficie suave.</li>
-        <li><strong>Toner:</strong> Aplica un toner para equilibrar el pH de tu piel y preparar tu rostro para los siguientes pasos.</li>
-        <li><strong>Hidratar:</strong> Usa una crema hidratante adecuada para tu tipo de piel para mantenerla hidratada y suave.</li>
-        <li><strong>Primer:</strong> Aplica un primer para crear una base lisa y ayudar a que el maquillaje dure más tiempo.</li>
-    </ol>
-    </div>
     <div class="container">
         <div class="producto">
             <img src="https://sdcdn.io/mac/mx/mac_sku_SWW201_1x1_0.png?width=1080&height=1080" alt="Producto 1">
@@ -126,6 +135,16 @@
             <p class="precio">$1,389.00 MXN</p>
             <a href="#" class="btn-comprar">Comprar</a>
         </div>
+        <div class="container1">
+    <h1>Pasos Para Preparar La Piel Antes De Aplicar Maquillaje</h1>
+    <ol>
+        <li><strong>Limpiar:</strong> Lava tu rostro con un limpiador suave para eliminar cualquier suciedad o residuo.</li>
+        <li><strong>Exfoliar:</strong> Usa un exfoliante suave para eliminar las células muertas de la piel y obtener una superficie suave.</li>
+        <li><strong>Toner:</strong> Aplica un toner para equilibrar el pH de tu piel y preparar tu rostro para los siguientes pasos.</li>
+        <li><strong>Hidratar:</strong> Usa una crema hidratante adecuada para tu tipo de piel para mantenerla hidratada y suave.</li>
+        <li><strong>Primer:</strong> Aplica un primer para crear una base lisa y ayudar a que el maquillaje dure más tiempo.</li>
+    </ol>
+    </div>
     </div>
 </body>
 </html>
